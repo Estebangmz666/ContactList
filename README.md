@@ -27,7 +27,7 @@ This is a **Contact Agenda** project developed in **Java** using **JavaFX** for 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/contact-agenda.git
+   git clone https://github.com/estebangmz666/contactList.git
    ```
 2. Navigate to the project directory:
    ```bash
