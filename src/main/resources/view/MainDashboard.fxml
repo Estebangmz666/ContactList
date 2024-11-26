@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estebangmz666.controller.MainDashboardController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="77.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agenda de Contactos!">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSeeContacts" layoutX="130.0" layoutY="217.0" mnemonicParsing="false" onAction="#btnSeeContactsClicked" style="-fx-background-color: #0598ff;" text="Ver Contactos" textFill="WHITE" />
+            <Button fx:id="btnRegisterContacts" layoutX="116.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnRegisterContactsClicked" style="-fx-background-color: #0598ff;" text="Registrar Contactos" textFill="WHITE" />
+            <Hyperlink fx:id="hlExit" layoutX="161.0" layoutY="463.0" onAction="#hlExitClicked" text="Salir" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

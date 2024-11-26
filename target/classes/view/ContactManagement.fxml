@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <Label text="Nombre" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+    <TextField fx:id="tfName" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+    <Label text="Apellido" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <TextField fx:id="tfLastName" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+    <Label text="Teléfono" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <TextField fx:id="tfCellphone" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+    <Label text="Empresa" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+    <TextField fx:id="tfCompany" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+    <Label text="Correo" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    <TextField fx:id="tfEmail" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+    <Label fx:id="lbMessage" layoutX="20.0" layoutY="400.0" text="" />
+
+    <Label text="Notas" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+    <VBox fx:id="vbNotes" GridPane.rowIndex="5" GridPane.columnIndex="1" spacing="5">
+        <children>
+        </children>
+    </VBox>
+
+    <Button text="+" onAction="#addNoteField" GridPane.rowIndex="5" GridPane.columnIndex="2" />
+
+    <Button text="Guardar" onAction="#saveContact" GridPane.rowIndex="6" GridPane.columnIndex="1" />
+    <Button text="Cancelar" onAction="#cancel" GridPane.rowIndex="6" GridPane.columnIndex="2" />
+</GridPane>

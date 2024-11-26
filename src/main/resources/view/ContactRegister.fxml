@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="estebangmz666.controller.ContactRegisterController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="85.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar Contacto">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfName" layoutX="101.0" layoutY="41.0" promptText="Ej: John" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="btnRegisterContact" layoutX="118.0" layoutY="425.0" mnemonicParsing="false" onAction="#btnRegisterContactClicked" style="-fx-background-color: #0598ff;" text="Registrar Contacto" textFill="WHITE" />
+            <Label fx:id="lbMessage" alignment="CENTER" layoutX="1.0" layoutY="397.0" prefHeight="17.0" prefWidth="349.0" textAlignment="CENTER" />
+            <Hyperlink fx:id="hlExit" layoutX="157.0" layoutY="467.0" onAction="#hlExitClicked" text="Atras" />
+            <Text layoutX="101.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre *" />
+            <TextField fx:id="tfLastName" layoutX="101.0" layoutY="93.0" promptText="Ej: Doe" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text layoutX="101.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" />
+            <TextField fx:id="tfCellphone" layoutX="101.0" layoutY="147.0" promptText="Ej: 1231231231" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text layoutX="101.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de Telefono *" />
+            <TextField fx:id="tfCompany" layoutX="101.0" layoutY="204.0" promptText="Ej: Google, Facebook" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text layoutX="101.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compañia / Empresa" />
+            <TextField fx:id="tfEmail" layoutX="101.0" layoutY="257.0" promptText="Ej: johndoe@gmail.com" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Text layoutX="101.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+            <ComboBox fx:id="cbPronoun" layoutX="100.0" layoutY="295.0" prefWidth="150.0" promptText="Pronombre" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
