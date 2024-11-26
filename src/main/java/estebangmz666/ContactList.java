@@ -14,7 +14,7 @@ public class ContactList extends Application {
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/MainDashboard.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("Billetera Virtual");
+        primaryStage.setTitle("Agenda de Contactos");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
